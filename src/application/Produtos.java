@@ -4,13 +4,24 @@ public class Produtos {
     private double price;
     private String name;
     private int id;
+    private int quantidade;
 
 
 
-    public Produtos(double price, String name){
+    public Produtos(double price, String name, int quantidade){
         this.price = price;
         this.name = name;
+        this.quantidade = quantidade;
 
+
+    }
+
+    public int getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
     }
 
     public int getId() {
